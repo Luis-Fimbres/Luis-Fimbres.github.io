@@ -206,6 +206,47 @@ section#services div#service_box div img{
 }
 
 /*------------------------------------------PORTFOLIO Section-----------------------------------*/
+section#portfolio{
+    padding: 72px 50px 72px 50px;
+    text-align: center;
+    align-items: center;
+    font-size: 1.7rem;
+    color: white;
+}
+section#portfolio div#tools_skills{
+    background-color: rebeccapurple;
+    gap: 30px;
+}
+section#portfolio div.skills_box{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+section#portfolio div#tools_skills div.skills_box{
+    border: 1px solid black;
+}
+section#portfolio div#tools_skills div.skills_box div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: green;
+}
+section#portfolio div#tools_skills div.skills_box div div{
+    align-items: center;
+    gap: 20px;
+    background-color: blue;
+    display: flex;
+}
+section#portfolio div#tools_skills div.skills_box div div.image_holder{
+    justify-content: center;
+    background-color: yellow;
+}
+section#portfolio div#tools_skills div.skills_box div div.image_holder img{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 20%;
+}
 
 
 
@@ -215,5 +256,13 @@ section#services div#service_box div img{
 @media (max-width: 955px) {
     body{
         background: red;
+    }
+    section#services div#service_box{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 656px){
+    section#services div#service_box{
+        grid-template-columns: 1fr;
     }
 }
