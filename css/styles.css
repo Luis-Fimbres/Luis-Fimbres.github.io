@@ -5,6 +5,13 @@
 }
 body{
     font-family: "Roboto", sans-serif;
+    background: #132438;
+    background: linear-gradient(90deg, rgba(19, 36, 56, 1) 0%, rgba(13, 35, 99, 1) 8%, rgba(13, 35, 99, 1) 92%, rgba(19, 36, 56, 1) 100%);
+}
+div.divider{
+    font-size: 5px;
+    color: black;
+    background-color: black;
 }
 button{
     justify-content: center;
@@ -12,17 +19,18 @@ button{
     font-family: "Germania One";
     border-radius: 5px;
     height: 40px;
-    width: 120px;
-    padding: 0 0 0 0;
+    padding: 0 12px 0 12px;
     border: 2px solid white;
     background-color: darkblue;
     color: white;
 }
 button:hover{
     background-color: rgb(0, 0, 84);
-    border: 1px solid white;
     cursor: pointer;
 }
+
+
+/*------------------------------------------HOME Section/NAV-----------------------------------*/
 section#home header div img{
     height: 20px;
     display: flex;
@@ -77,6 +85,8 @@ section#home header nav ul li a{
     text-decoration: none;
     font-size: 1.5rem;
 }
+
+/*------------------------------------------HOME Content-----------------------------------*/
 section#home #content{
     display: flex;
     width: 100%;
@@ -85,8 +95,7 @@ section#home #content{
 }
 section#home #content div{
     justify-content: center;
-    
-    margin: 50px 0 50px 0;
+    margin: 58px 0 72px 0;
 }
 section#home #content h2{
     font-weight: 100;
@@ -107,4 +116,104 @@ section#home #content div img{
     border: 1px solid white;
     border-radius: 50%;
     box-shadow: 0 0 25px -5px white;
+}
+
+/*------------------------------------------ABOUT Section-----------------------------------*/
+section#about{
+    display: flex;
+    padding: 72px 50px 72px 50px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    color: white;
+}
+section#about div div h2{
+    font-weight: 100;
+    font-family: "Germania One";
+    font-size: 3.5rem;
+}
+section#about div div p{
+    padding: 15px 0 15px 0;
+}
+section#about div#percent_box div{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+section#about div#percent_box div div{
+    background-color: rgba(60, 60, 60, 0.603);
+    padding: 5px 15px 5px 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 44.5%;
+    margin-bottom: 10px;
+}
+section#about div#percent_box div div p{
+    font-family: "Germania One";
+    margin: 0;
+    padding: 0;
+}
+section#about div button{
+    margin-top: 15px;
+}
+section#about div img{
+    display: flex;
+    width: 35vw;
+    margin-right: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 25px -5px white;
+}
+
+/*------------------------------------------SERVICE Section-----------------------------------*/
+section#services{
+    padding: 72px 50px 72px 50px;
+    text-align: center;
+    align-items: center;
+    font-size: 1.7rem;
+    color: white;
+}
+section#services div h2{
+    font-weight: 100;
+    font-family: "Germania One";
+    font-size: 3.5rem;
+}
+section#services div#service_box{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+section#services div#service_box div{
+    padding: 20px;
+    background-color: rgba(60, 60, 60, 0.603);
+    border: 5px solid black;
+    border-radius: 15px;
+}
+section#services div#service_box div h3{
+    text-align: left;
+    font-weight: 100;
+    font-family: "Germania One";
+    font-size: 2.5rem;
+}
+section#services div#service_box div p{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+section#services div#service_box div img{
+    width: 100%;
+}
+
+/*------------------------------------------PORTFOLIO Section-----------------------------------*/
+
+
+
+
+
+/*------------------------------------------MEDIA Configuration-----------------------------------*/
+@media (max-width: 955px) {
+    body{
+        background: red;
+    }
 }
