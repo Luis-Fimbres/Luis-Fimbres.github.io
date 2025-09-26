@@ -87,35 +87,38 @@ section#home header nav ul li a{
 }
 
 /*------------------------------------------HOME Content-----------------------------------*/
-section#home #content{
+section#home div#content{
     display: flex;
     width: 100%;
     align-items: center;
     /*background-color: red;*/
 }
-section#home #content div{
+section#home div#content div{
     justify-content: center;
     margin: 58px 0 72px 0;
 }
-section#home #content h2{
+section#home div#content h2{
     font-weight: 100;
     font-family: "Germania One";
     font-size: 3.5rem;
     color: white;
     padding: 0 0 15px 0;
 }
-section#home #content p{
+section#home div#content p{
     font-size: 1.7rem;
     color: white;
     padding: 0 0 15px 0;
 }
-section#home #content div img{
+section#home div#content div img{
     display: flex;
     width: 30vw;
     margin-left: 50px;
     border: 1px solid white;
     border-radius: 50%;
     box-shadow: 0 0 25px -5px white;
+}
+section#home div#content div h2:nth-child(1){
+    display: none;
 }
 
 /*------------------------------------------ABOUT Section-----------------------------------*/
@@ -323,6 +326,45 @@ section#portfolio div#tools_skills div.skills_box div div.image_holder img{
     }
 }
 
+@media (max-width: 859px){
+    /*------------HOME---------*/
+    section#home{
+        background-size: 240%;
+    }
+    section#home div#content{
+        display: block;
+    }
+    section#home div#content div{
+        margin-bottom: 0;
+        padding-bottom: 72px;
+    }
+    section#home div#content div:nth-child(2){
+        display: none;
+    }
+    section#home div#content div img{
+        border-radius: 0;
+        margin: 0 0 0 0;
+        background-color: rebeccapurple;
+    }
+    section#home div#content div h2:nth-child(1){
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section#home div#content div h2:nth-child(1) img{
+        width: 50%;
+        border-radius: 50%;
+        margin: 10px 0 0 0;
+    }
+    section#home div#content div h2:nth-child(2){
+        display: none;
+    }
+    section#home header nav{
+        display: none;
+    }
+}
+
 @media (max-width: 656px){
     /*------------About ME---------*/
     section#about div div h2{
@@ -332,10 +374,6 @@ section#portfolio div#tools_skills div.skills_box div div.image_holder img{
     section#about div img{
         width: 25vw;
         margin-bottom: 15px;
-    }
-    /*------------Services---------*/
-    section#services div#service_box{
-        grid-template-columns: 1fr;
     }
     /*------------Tools and Skills---------*/
     section#portfolio div#tools_skills div.skills_box{
@@ -349,3 +387,13 @@ section#portfolio div#tools_skills div.skills_box div div.image_holder img{
         padding: 5px 0 5px 0;
     }
 }
+
+@media (max-width: 600px){
+    /*------------Services---------*/
+    section#services div#service_box{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*NOTE!!!!!, SMALLEST STABLE SIZE IS 450*/
