@@ -15,7 +15,7 @@ div.divider{
 }
 button{
     justify-content: center;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-family: "Germania One";
     border-radius: 5px;
     height: 40px;
@@ -27,6 +27,14 @@ button{
 button:hover{
     background-color: rgb(0, 0, 84);
     cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+button a:link, button a:visited, button a:hover, button a:active{
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -299,6 +307,88 @@ section#portfolio div#tools_skills div.skills_box div div.image_holder img{
     background-color: white;
 }
 
+/*------------------------------------------SHOWCASE Section-----------------------------------*/
+section#showcase{
+    padding: 72px 50px 72px 50px;
+    text-align: center;
+    align-items: center;
+    font-size: 1.7rem;
+    color: white;
+}
+section#showcase div h2{
+    font-weight: 100;
+    font-family: "Germania One";
+    font-size: 3.5rem;
+}
+section#showcase div#service_box{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+section#showcase div#service_box div{
+    /*border: 5px solid black;*/
+}
+section#showcase div#service_box div h3{
+    text-align: left;
+    font-weight: 100;
+    font-family: "Germania One";
+    font-size: 2.5rem;
+}
+section#showcase div#service_box div img{
+    width: 100%;
+}
+
+/*------------------------------------------TESTIMONIALS Section-----------------------------------*/
+section#testimonials{
+    padding: 72px 50px 72px 50px;
+    text-align: center;
+    align-items: center;
+    font-size: 1.7rem;
+    color: white;
+}
+section#testimonials div h2{
+    font-weight: 100;
+    font-family: "Germania One";
+    font-size: 3.5rem;
+}
+section#testimonials div#testimonials_box{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+section#testimonials div#testimonials_box div.testimonials_container{
+    background-color: rgba(60, 60, 60, 0.603);
+    align-items: center;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+section#testimonials div#testimonials_box div.testimonials_container div p:nth-child(1){
+    padding-bottom: 10px;
+}
+section#testimonials div#testimonials_box div div{
+    display: block;
+    text-align: left;
+    padding: 0 10px 0 10px;
+}
+section#testimonials div#testimonials_box div div p:nth-child(1){
+    text-align: center;
+}
+section#testimonials div#testimonials_box div div h3{
+    font-weight: 100;
+    font-family: "Germania One";
+    font-size: 2rem;
+    padding-top: 10px;
+}
+section#testimonials div#testimonials_box div img{
+    width: 30%;
+}
+
 
 
 
@@ -324,6 +414,17 @@ section#portfolio div#tools_skills div.skills_box div div.image_holder img{
     section#services div#service_box{
         grid-template-columns: 1fr 1fr;
     }
+    /*------------Showcase---------*/
+    section#showcase div#service_box{
+        grid-template-columns: 1fr 1fr;
+    }
+    /*------------Testimonials---------*/
+    section#testimonials div#testimonials_box{
+        grid-template-columns: 1fr;
+    }
+    section#testimonials div#testimonials_box div{
+        display: block;
+    }
 }
 
 @media (max-width: 859px){
@@ -344,7 +445,6 @@ section#portfolio div#tools_skills div.skills_box div div.image_holder img{
     section#home div#content div img{
         border-radius: 0;
         margin: 0 0 0 0;
-        background-color: rebeccapurple;
     }
     section#home div#content div h2:nth-child(1){
         justify-content: center;
@@ -389,9 +489,23 @@ section#portfolio div#tools_skills div.skills_box div div.image_holder img{
 }
 
 @media (max-width: 600px){
+    /*------------About ME---------*/
+    section#about div div div div p{
+        font-size: 4vw;
+        display: flex;
+        justify-content: center;
+    }
     /*------------Services---------*/
     section#services div#service_box{
         grid-template-columns: 1fr;
+    }
+    /*------------Showcase---------*/
+    section#showcase div#service_box{
+        grid-template-columns: 1fr;
+    }
+    /*------------Testimonials---------*/
+    section#testimonials div#testimonials_box div.testimonials_container{
+        display: block;
     }
 }
 
