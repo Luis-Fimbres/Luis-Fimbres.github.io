@@ -54,6 +54,9 @@ section#home header div img{
     border: white 1px solid;
     margin: 0 10px 0 0;
 }
+section#home header div#home_small{
+    display: none;
+}
 section#home{
     /*background: #07065c;
     background: linear-gradient(90deg, rgba(7, 6, 92, 1) 0%, rgba(21, 21, 143, 1) 35%, rgba(34, 0, 255, 1) 100%);*/
@@ -118,6 +121,10 @@ section#home div#content p{
     font-size: 1.7rem;
     color: white;
     padding: 0 0 15px 0;
+    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px -1px 3px black;
+    text-shadow: -1px 1px 3px black;
+    text-shadow: -1px -1px 3px black;
 }
 section#home div#content div img{
     display: flex;
@@ -272,22 +279,23 @@ section#portfolio div#tools_skills div.skills_box div#percent1 div p, section#po
     font-size: 1.8rem;
 }
 section#portfolio div#tools_skills div.skills_box div#percent1 div{
-    width: 80%;
+    width: 92%;
 }
 section#portfolio div#tools_skills div.skills_box div#percent2 div{
-    width: 60%;
+    width: 82%;
 }
 section#portfolio div#tools_skills div.skills_box div#percent3 div{
-    width: 35%;
+    width: 95%;
 }
 section#portfolio div#tools_skills div.skills_box div#percent4 div{
-    width: 70%;
+    width: 75%;
 }
 section#portfolio div#tools_skills div.skills_box div div{
     display: block;
     text-align: left;
 }
 section#portfolio div#tools_skills div.skills_box div div h3{
+    font-weight: 120;
     font-size: 1.5rem;
     white-space: nowrap;
 }
@@ -330,10 +338,13 @@ section#showcase div#service_box{
     gap: 20px;
 }
 section#showcase div#service_box div{
-    /*border: 5px solid black;*/
+    border: 5px solid black;
+    padding: 10px 10px 5px 10px;
+    background-color: rgba(60, 60, 60, 0.603);
+    border-radius: 15px;
 }
 section#showcase div#service_box div h3{
-    text-align: left;
+    text-align: center;
     font-weight: 100;
     font-family: "Germania One";
     font-size: 2.5rem;
@@ -647,11 +658,6 @@ section#quick_links{
     justify-content: space-between;
     gap: 60px;
 }
-/*section#quick_links div h2{
-    font-weight: 100;
-    font-family: "Germania One";
-    font-size: 3.5rem;
-}*/
 section#quick_links div#links_left{
     display: flex;
     flex-direction: column;
@@ -661,7 +667,7 @@ section#quick_links div#links_left{
 section#quick_links div#links_left div{
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 section#quick_links div#links_left div p{
     font-family: "Germania One";
@@ -796,6 +802,9 @@ section#quick_links div#links_right div a:hover{
     section#home{
         background-size: 240%;
     }
+    section#home header div#home_original{
+        display: none;
+    }
     section#home div#content{
         display: block;
     }
@@ -827,6 +836,24 @@ section#quick_links div#links_right div a:hover{
     section#home header nav{
         display: none;
     }
+    section#home header div#home_small{
+        display: flex;
+    }
+    section#home header div#home_small button{
+        padding: 2px 3px 2px 3px;
+        margin: 0 10px 0 0;
+        background: darkblue;
+    }
+    section#home header div#home_small button img{
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        border-radius: 0;
+        border: none;
+        width: 100%;
+        height: 100%;
+        background: darkblue;
+        border-radius: 2.5px;
+    }
     /*------------Latest News---------*/
     section#news div#tools_skills div.skills_box{
         display: block;
@@ -835,6 +862,25 @@ section#quick_links div#links_right div a:hover{
         display: flex;
         margin-top: 18px;
         justify-content: center;
+    }
+    section#news div#tools_skills div.skills_box div:last-child button{
+        margin: 0 0 0 0;
+    }
+}
+
+@media (max-width: 765px){
+    /*------------Quick Links---------*/
+    section#quick_links{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    section#quick_links div#links_left{
+        columns: 2;
+    }
+    section#quick_links div#links_right{
+        justify-content: space-around;
+        grid-row: 1;
     }
 }
 
@@ -897,8 +943,15 @@ section#quick_links div#links_right div a:hover{
     }
     section#NO{
         display: inline;
+        color: white;
+        padding: 20px;
+        font-size: 1.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
     body{
-        background: red;
+        display: flex;
+        background: black;
     }
 }

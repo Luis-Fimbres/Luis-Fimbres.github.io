@@ -18,13 +18,23 @@
 </head>
 <body>
     <section id="NO">
-        <p>Sorry :(</p>
+        <h2>:(</h2>
+        <p>Sorry, your resolution is not supported</p>
+        <p>If you have this page windowed, making the window bigger might solve your problem</p>
+        <p>If you are on a mobile device, maybe landscape orientation might help</p>
+        <p>If nothing works, sorry once again…</p>
+        <p>- Luis Fimbres G</p>
     </section>
     <section id="home">
         <header>
-            <div>
+            <div id="home_original">
                 <img src="./img/Profile_Picture.JPG">
                 <h1>Luis Fimbres G</h1>
+            </div>
+            <div id="home_small">
+                <button><img src="./img/burger-menu-white.svg"></button>
+                <img src="./img/Profile_Picture.JPG">
+                <h1>Luis F</h1>
             </div>
             <nav>
                 <ul>
@@ -32,18 +42,18 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#showcase">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div>
-                <button>Lets Talk</button>
+                <button><a href="#contact">Lets Talk</a></button>
             </div>
         </header>
         <div id="content">
             <div>
                 <h2>Hi, I am Luis Alberto Fimbres Garcia - A student...<img src="./img/Profile_Picture.JPG"></h2>
                 <h2>Hi, I am Luis Alberto Fimbres Garcia - A student...</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque atque voluptas quisquam deserunt alias nisi molestias, fugiat sint excepturi maxime fuga, doloremque natus eum labore iure corporis molestiae eius veniam?</p>
+                <p>I am currently a student at the Instituto Tecnológico Superior de Nuevo Casas Grandes. Right now, I am studying Computer Systems Engineering and I live in Colonia Juarez.</p>
                 <button>Hire Me</button>
                 <button><a href="#showcase">Portfolio</a></button>
             </div>
@@ -60,7 +70,7 @@
         <div>
             <div>
                 <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veniam corrupti earum maiores aut ex dolorem nulla.</p>
+                <p>I am a 20-year-old that really likes Windows 7 for some reason. I also like computer science in general and really enjoy working in Stage Management. Here are some of my attributes:</p>
             </div>
             <div id="percent_box">
                 <div>
@@ -72,45 +82,45 @@
                     <div><p>Honest</p><p>96%</p></div>
                 </div>
             </div>
-            <button>Download my Resume</button>
+            <button onclick="window.print()">Download my Resume</button>
         </div>
     </section>
     <div class="divider">Hidden Text: HOWDY</div>
     <section id="services">
         <div>
             <h2>Services</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Here we have some things I know and do, and also some random stuff</p>
         </div>
         <div id="service_box">
             <div>
-                <img src="./img/img_services/TEST.jpg">
-                <h3>TEXT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo atque quidem repudiandae quasi.</p>
+                <img src="./img/img_services/Windows_7.png">
+                <h3>Windows 7</h3>
+                <p>Windows 7 is my favorite operating system; I love the design and the transparency everywhere.</p>
             </div>
             <div>
-                <img src="./img/img_services/TEST.jpg">
-                <h3>TEXT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo atque quidem repudiandae quasi.</p>
+                <img src="./img/img_services/Stage_Management.png">
+                <h3>Stage Management</h3>
+                <p>I really enjoy working with stagehands, sounds, lighting, planning, and everything related to a stage.</p>
             </div>
             <div>
-                <img src="./img/img_services/TEST.jpg">
-                <h3>TEXT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo atque quidem repudiandae quasi.</p>
+                <img src="./img/img_services/VirtualBox.png">
+                <h3>VirtualBox</h3>
+                <p>Installing operating systems is a hobby of mine, and I have been using VirtualBox since forever.</p>
             </div>
             <div>
-                <img src="./img/img_services/TEST.jpg">
-                <h3>TEXT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo atque quidem repudiandae quasi.</p>
+                <img src="./img/img_services/Audacity.png">
+                <h3>Audacity</h3>
+                <p>Whenever I do recordings or work with audio, this is the tool I use. There is no better tool out there.</p>
             </div>
             <div>
-                <img src="./img/img_services/TEST.jpg">
-                <h3>TEXT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo atque quidem repudiandae quasi.</p>
+                <img src="./img/img_services/MyDMX.png">
+                <h3>MyDMX</h3>
+                <p>Since I was freshmen, I have been working with DMX lighting equipment and the DMX 1.0.</p>
             </div>
             <div>
-                <img src="./img/img_services/TEST.jpg">
-                <h3>TEXT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo atque quidem repudiandae quasi.</p>
+                <img src="./img/img_services/Programming.png">
+                <h3>Programming</h3>
+                <p>I really enjoy programming, especially Java and Python (which I learned studying at the TEC).</p>
             </div>
         </div>
     </section>
@@ -123,64 +133,64 @@
             <div class="skills_box">
                 <div class="left_side">
                     <div class="image_holder">
-                        <img src="./img/Windows_7_Design.jpg">
+                        <img src="./img/img_tools&skills/Audacity.png">
                     </div>
                     <div>
-                        <h3>PLACEHOLDER TEXT</h3>
-                        <p>80%</p>
+                        <h3>Audacity</h3>
+                        <p>92%</p>
                     </div>
                 </div>
                 <div id="percent1">
                     <div>
-                        <p>80%</p>
+                        <p>92%</p>
                     </div>
                 </div>
             </div>
             <div class="skills_box">
                 <div class="left_side">
                     <div class="image_holder">
-                        <img src="./img/Windows_7_Design.jpg">
+                        <img src="./img/img_tools&skills/Photoshop.png">
                     </div>
                     <div>
-                        <h3>PLACEHOLDER TEXT</h3>
-                        <p>60%</p>
+                        <h3>Photoshop</h3>
+                        <p>82%</p>
                     </div>
                 </div>
                 <div id="percent2">
                     <div>
-                        <p>60%</p>
+                        <p>82%</p>
                     </div>
                 </div>
             </div>
             <div class="skills_box">
                 <div class="left_side">
                     <div class="image_holder">
-                        <img src="./img/Windows_7_Design.jpg">
+                        <img src="./img/img_tools&skills/Windows_7_Design.jpg">
                     </div>
                     <div>
-                        <h3>PLACEHOLDER TEXT</h3>
-                        <p>35%</p>
+                        <h3>Windows 7</h3>
+                        <p>95%</p>
                     </div>
                 </div>
                 <div id="percent3">
                     <div>
-                        <p>35%</p>
+                        <p>95%</p>
                     </div>
                 </div>
             </div>
             <div class="skills_box">
                 <div class="left_side">
                     <div class="image_holder">
-                        <img src="./img/Windows_7_Design.jpg">
+                        <img src="./img/img_tools&skills/Visual_Studio_Code.png">
                     </div>
                     <div>
-                        <h3>PLACEHOLDER TEXT</h3>
-                        <p>70%</p>
+                        <h3>Visual Studio Code</h3>
+                        <p>75%</p>
                     </div>
                 </div>
                 <div id="percent4">
                     <div>
-                        <p>70%</p>
+                        <p>75%</p>
                     </div>
                 </div>
             </div>
@@ -194,40 +204,40 @@
         </div>
         <div id="service_box">
             <div>
-                <img src="./img/img_services/TEST.jpg">
-                <h3>TEXT</h3>
+                <img src="./img/img_showcase/Windows_7_theme.png">
+                <h3>Windows 7 Theme</h3>
             </div>
             <div>
-                <img src="./img/img_services/TEST.jpg">
-                <h3>TEXT</h3>
+                <img src="./img/img_showcase/Tic-Tac-Toe.png">
+                <h3>Tic-Tac-Toe</h3>
             </div>
             <div>
-                <img src="./img/img_services/TEST.jpg">
-                <h3>TEXT</h3>
+                <img src="./img/img_showcase/Luis's_Clinic.png">
+                <h3>Luis's Clinic</h3>
             </div>
             <div>
-                <img src="./img/img_services/TEST.jpg">
-                <h3>TEXT</h3>
+                <img src="./img/img_showcase/Los_Luises_Albertos.png">
+                <h3>Los Luises Albertos</h3>
             </div>
             <div>
-                <img src="./img/img_services/TEST.jpg">
-                <h3>TEXT</h3>
+                <img src="./img/img_showcase/Counter 0-9.png">
+                <h3>Number Display 0-9</h3>
             </div>
             <div>
-                <img src="./img/img_services/TEST.jpg">
-                <h3>TEXT</h3>
+                <img src="./img/img_showcase/Browser.png">
+                <h3>Vintage Browser</h3>
             </div>
             <div>
-                <img src="./img/img_services/TEST.jpg">
-                <h3>TEXT</h3>
+                <img src="./img/img_showcase/Grading_Book.png">
+                <h3>Grading Book</h3>
             </div>
             <div>
-                <img src="./img/img_services/TEST.jpg">
-                <h3>TEXT</h3>
+                <img src="./img/img_showcase/Traffic_lights_3000.png">
+                <h3>Traffic Lights 3000</h3>
             </div>
             <div>
-                <img src="./img/img_services/TEST.jpg">
-                <h3>TEXT</h3>
+                <img src="./img/img_showcase/myDMX.png">
+                <h3>Light Configuration</h3>
             </div>
         </div>
         <button><a href="https://github.com/Luis-Fimbres/" target="_blank">View my Work</a></button>
@@ -370,7 +380,7 @@
                     </div>
                 </div>
                 <div>
-                    <button>Read More</button>
+                    <button><a href="https://www.uxdesigninstitute.com/blog/design-intuitive-user-interfaces/" target="_blank">Read More</a></button>
                 </div>
             </div>
             <div class="skills_box">
@@ -385,7 +395,7 @@
                     </div>
                 </div>
                 <div>
-                    <button>Read More</button>
+                    <button><a href="https://plugins.audacityteam.org/" target="_blank">Read More</a></button>
                 </div>
             </div>
             <div class="skills_box">
@@ -395,12 +405,12 @@
                         <p>May, 2025</p>
                     </div>
                     <div class="news_holder">
-                        <h4>Five Versions of Windows to Avoid</h4>
+                        <h4>Six Versions of Windows to Avoid</h4>
                         <p>A retrospective look at the least stable, most frustrating, and insecure Windows operating systems you should skip</p>
                     </div>
                 </div>
                 <div>
-                    <button>Read More</button>
+                    <button><a href="https://www.howtogeek.com/720504/the-6-worst-versions-of-windows-ranked/" target="_blank">Read More</a></button>
                 </div>
             </div>
         </div>
