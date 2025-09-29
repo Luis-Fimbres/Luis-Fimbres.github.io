@@ -905,6 +905,17 @@ section#quick_links div#links_right div a:hover{
     section#portfolio div#tools_skills div.skills_box div#percent1 div, section#portfolio div#tools_skills div.skills_box div#percent2 div, section#portfolio div#tools_skills div.skills_box div#percent3 div, section#portfolio div#tools_skills div.skills_box div#percent4 div{
         padding: 5px 0 5px 0;
     }
+    /*------------Services---------*/
+    section#services div#service_box{
+        grid-template-columns: 1fr;
+    }
+    /*------------Showcase---------*/
+    section#showcase div#service_box{
+        grid-template-columns: 1fr;
+    }
+    section#showcase div#service_box div:first-child{
+        grid-column: 1;
+    }
     /*------------Latest News---------*/
     section#news div#tools_skills div.skills_box div{
         display: block;
@@ -917,17 +928,6 @@ section#quick_links div#links_right div a:hover{
         font-size: 4vw;
         display: flex;
         justify-content: center;
-    }
-    /*------------Services---------*/
-    section#services div#service_box{
-        grid-template-columns: 1fr;
-    }
-    /*------------Showcase---------*/
-    section#showcase div#service_box{
-        grid-template-columns: 1fr;
-    }
-    section#showcase div#service_box div:first-child{
-        grid-column: 1;
     }
     /*------------Testimonials---------*/
     section#testimonials div#testimonials_box div.testimonials_container{
