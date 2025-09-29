@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background: black;
+}
+/*NOTE: Lo hize de esta manera para que sea "responsive" (mas bien para que no se deforme el fondo y las cosas)*/
+/*----------------------------------MAIN WINDOW---------------------------------*/
+div#main_window{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+}
+div#main_window div#main_container{
+    position: relative;
+}
+/*----------------------------------BACKGROUND---------------------------------*/
+div#main_window div#main_container div#background_container{
+    display: flex;
+}
+div#main_window div#main_container div#background_container img{
+    width: 100%;
+    height: calc(100vw*0.5625); /*Aspect ratio based on width, 56.25% (1920x1080)*/
+    max-height: 100vh;
+}
+/*----------------------------------CHARACTERS & STUFF---------------------------------*/
+div#main_window div#main_container div#DK img{
+    position: absolute;
+    width: 15%;
+    top: 13%;
+    left: 9.5%;
+}
+div#main_window div#main_container div#Barrel_1 img{
+    position: absolute;
+    width: 10%;
+    top: 70%;
+    left: 8.5%;
+    transform: rotate(-20deg);
+}
+div#main_window div#main_container div#Barrel_2 img{
+    position: absolute;
+    width: 10%;
+    top: 75%;
+    left: 82%;
+}
