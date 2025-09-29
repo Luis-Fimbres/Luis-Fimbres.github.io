@@ -36,7 +36,9 @@ button a:link, button a:visited, button a:hover, button a:active{
     text-decoration: none;
     color: white;
 }
-
+section#NO{
+    display: none;
+}
 
 /*------------------------------------------HOME Section/NAV-----------------------------------*/
 section#home header div img{
@@ -240,7 +242,7 @@ section#portfolio div#tools_skills div.skills_box{
     display: flex;
     align-items: center;
     border-radius: 8px;
-    border: 2px solid black;
+    border: 5px solid black;
     padding: 15px 18px 15px 18px;
     font-weight: 100;
     font-family: "Germania One";
@@ -365,7 +367,7 @@ section#testimonials div#testimonials_box div.testimonials_container{
     align-items: center;
     display: flex;
     padding: 10px 10px 10px 10px;
-    border: 1px solid black;
+    border: 5px solid black;
     border-radius: 5px;
 }
 section#testimonials div#testimonials_box div.testimonials_container div p:nth-child(1){
@@ -389,11 +391,351 @@ section#testimonials div#testimonials_box div img{
     width: 30%;
 }
 
+/*------------------------------------------Pricing Plans Section-----------------------------------*/
+section#plans{
+    padding: 72px 50px 72px 50px;
+    text-align: center;
+    align-items: center;
+    font-size: 1.7rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+section#plans div h2{
+    font-weight: 100;
+    font-family: "Germania One";
+    font-size: 3.5rem;
+}
+section#plans div#plans_box{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+section#plans div#plans_box div.plans_container{
+    background-color: rgba(60, 60, 60, 0.603);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    border: 5px solid black;
+    border-radius: 15px;
+    max-width: 370px;
+}
+section#plans div#plans_box div.plans_container div{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+section#plans div#plans_box div.plans_container div p{
+    padding-bottom: 10px;
+}
+section#plans div#plans_box div div p{
+    text-align: center;
+}
+section#plans div#plans_box div.plans_container div p:nth-child(1){
+    padding-bottom: 0;
+    padding: 5px 0 5px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+}
+section#plans div#plans_box div.plans_container div p:nth-child(3){
+    text-align: left;
+    padding: 0 0 5px 0;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+section#plans div#plans_box div.plans_container div p:nth-child(3),section#plans div#plans_box div.plans_container div ul{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+}
+section#plans div#plans_box div.plans_container div ul{
+    list-style-type: none;
+    text-align: left;
+    height: 100%;
+}
+section#plans div#plans_box div.plans_container div ul li{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+section#plans div#plans_box div.plans_container div ul li img{
+    width: 1.7rem;
+    padding: 0 10px 0 10px;
+}
+section#plans div#plans_box div div h3{
+    text-align: center;
+    font-weight: 100;
+    font-family: "Germania One";
+    font-size: 2.8rem;
+}
+section#plans div#plans_box div div h3 i{
+    font-size: 1.7rem;
+}
+section#plans div#plans_box button{
+    width: 100%;
+}
+
+/*------------------------------------------Contact Me Section-----------------------------------*/
+section#contact{
+    padding: 72px 50px 72px 50px;
+    align-items: center;
+    font-size: 1.7rem;
+    color: white;
+}
+section#contact div div h2{
+    font-weight: 100;
+    font-family: "Germania One";
+    font-size: 3.5rem;
+}
+section#contact div#contact_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+section#contact div#contact_box div#contact_stuff{
+    gap: 10px;
+}
+section#contact div#contact_box div#contact_stuff p#contact_info{
+    margin-bottom: 10px;
+}
+section#contact div#contact_box div#contact_stuff div{
+    display: flex;
+    font-family: "Germania One";
+    align-items: center;
+    margin-bottom: 10px;
+}
+section#contact div#contact_box div#contact_stuff div img{
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgba(60, 60, 60, 0.603);
+    padding: 5px;
+    border: 1px solid black;
+    width: 2rem;
+}
+section#contact div#contact_box div#form div:first-child{
+    background-color: rgba(60, 60, 60, .99);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 5px solid black;
+}
+section#contact div#contact_box div#form{
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    z-index: 2;
+}
+section#contact div#contact_box div#form h2{
+    font-family: "Germania One";
+    font-size: 3.5rem;
+    text-align: center;
+    padding-bottom: 10px;
+}
+section#contact div#contact_box div#form div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section#contact div#contact_box div#form div input{
+    padding: 15px;
+    font-size: 1.4rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+section#contact div#contact_box div#form div textarea{
+    resize: none;
+    height: 5rem;
+    font-family: roboto;
+    font-size: 1.4rem;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+section#contact div#contact_box div#form button{
+    margin-top: 20px;
+}
+section#contact div#contact_map{
+    grid-column: 1 / span 2;
+    margin-top: -180px;
+    z-index: 1;
+    height: 350px;
+}
+section#contact div#contact_map iframe{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+/*------------------------------------------NEWS Section-----------------------------------*/
+section#news{
+    padding: 72px 50px 72px 50px;
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+}
+section#news div h2{
+    font-weight: 100;
+    font-family: "Germania One";
+    font-size: 3.5rem;
+}
+section#news div#tools_skills{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+section#news div#tools_skills div.skills_box{
+    background-color: rgba(60, 60, 60, 0.603);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: 5px solid black;
+    padding: 15px 18px 15px 18px;
+    font-weight: 100;
+    font-family: "Germania One";
+}
+section#news div#tools_skills div.skills_box div{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+section#news div#tools_skills div.skills_box div div.news_holder{
+    display: block;
+    text-align: left;
+}
+section#news div#tools_skills div.skills_box div div:nth-child(1){
+    display: block;
+    white-space: nowrap;
+}
+section#news div#tools_skills div.skills_box div div h3{
+    text-align: center;
+    font-size: 3.2rem;
+    white-space: nowrap;
+}
+section#news div#tools_skills div.skills_box div div.news_holder{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    border-radius: 5px;
+}
+section#news div#tools_skills div.skills_box div div.news_holder h4{
+    font-weight: 100;
+}
+section#news div#tools_skills div.skills_box div div p{
+    font-size: 1.4rem;
+}
+section#news div#tools_skills div.skills_box div button{
+    margin-left: 18px;
+    text-wrap: nowrap;
+}
+
+/*------------------------------------------Quick Links Section-----------------------------------*/
+section#quick_links{
+    padding: 32px 50px 32px 50px;
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+/*section#quick_links div h2{
+    font-weight: 100;
+    font-family: "Germania One";
+    font-size: 3.5rem;
+}*/
+section#quick_links div#links_left{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+}
+section#quick_links div#links_left div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+section#quick_links div#links_left div p{
+    font-family: "Germania One";
+    font-size: 2rem;
+}
+section#quick_links div#links_left div img{
+    width: 2.4rem;
+}
+section#quick_links div#links_left h3{
+    font-weight: 100;
+    font-family: "Germania One";
+    font-size: 1.7rem;
+}
+section#quick_links div#links_left p{
+    font-size: 1.2rem;
+}
+section#quick_links div#links_right{
+    display: flex;
+    justify-content: right;
+    gap: 50px;
+    text-wrap: nowrap;
+}
+section#quick_links div#links_right div h3{
+    font-weight: 100;
+    font-family: "Germania One";
+    font-size: 1.7rem;
+}
+section#quick_links div#links_right div p{
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+section#quick_links div#links_right div a{
+    text-decoration: none;
+    color: white;
+}
+section#quick_links div#links_right div a:hover{
+    text-decoration: underline;
+}
 
 
 
 
 /*------------------------------------------MEDIA Configuration-----------------------------------*/
+@media (max-width: 1150px){
+    /*------------Testimonials---------*/
+    section#testimonials div#testimonials_box div{
+        display: block;
+    }
+    /*------------Pricing Plans---------*/
+    section#plans div#plans_box{
+        grid-template-columns: 1fr 1fr;
+    }
+    section#plans div#plans_box div.plans_container{
+    }
+    section#plans div#plans_box div.plans_container:last-child{
+        grid-column: 1 / span 2;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 1200px){
+    /*------------Testimonials---------*/
+    section#testimonials div#testimonials_box{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1180px){
+    /*------------Contact Me---------*/
+    section#contact div#contact_map{
+        margin-top: -130px;
+    }
+}
+
 @media (max-width: 955px) {
     body{
         /*background: red;*/
@@ -418,13 +760,35 @@ section#testimonials div#testimonials_box div img{
     section#showcase div#service_box{
         grid-template-columns: 1fr 1fr;
     }
-    /*------------Testimonials---------*/
-    section#testimonials div#testimonials_box{
+    section#showcase div#service_box div:first-child{
+        grid-column: 1 / span 2;
+        justify-self: center;
+    }
+    /*------------Pricing Plans---------*/
+    section#plans div#plans_box{
         grid-template-columns: 1fr;
     }
-    section#testimonials div#testimonials_box div{
-        display: block;
+    section#plans div#plans_box div.plans_container:last-child{
+        grid-column: 1;
     }
+    /*------------Contact Me---------*/
+    section#contact div#contact_map{
+        margin-top: 0px;
+    }
+    section#contact div#contact_box{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        place-items: center;
+    }
+    section#contact div#contact_box div#form{
+        margin-left: 0;
+    }
+    section#contact div#contact_map{
+        grid-column: 1;
+        width: 100%;
+    }
+    
 }
 
 @media (max-width: 859px){
@@ -463,6 +827,15 @@ section#testimonials div#testimonials_box div img{
     section#home header nav{
         display: none;
     }
+    /*------------Latest News---------*/
+    section#news div#tools_skills div.skills_box{
+        display: block;
+    }
+    section#news div#tools_skills div.skills_box div:last-child{
+        display: flex;
+        margin-top: 18px;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 656px){
@@ -486,6 +859,10 @@ section#testimonials div#testimonials_box div img{
     section#portfolio div#tools_skills div.skills_box div#percent1 div, section#portfolio div#tools_skills div.skills_box div#percent2 div, section#portfolio div#tools_skills div.skills_box div#percent3 div, section#portfolio div#tools_skills div.skills_box div#percent4 div{
         padding: 5px 0 5px 0;
     }
+    /*------------Latest News---------*/
+    section#news div#tools_skills div.skills_box div{
+        display: block;
+    }
 }
 
 @media (max-width: 600px){
@@ -503,6 +880,9 @@ section#testimonials div#testimonials_box div img{
     section#showcase div#service_box{
         grid-template-columns: 1fr;
     }
+    section#showcase div#service_box div:first-child{
+        grid-column: 1;
+    }
     /*------------Testimonials---------*/
     section#testimonials div#testimonials_box div.testimonials_container{
         display: block;
@@ -511,3 +891,14 @@ section#testimonials div#testimonials_box div img{
 
 
 /*NOTE!!!!!, SMALLEST STABLE SIZE IS 450*/
+@media (max-width: 449px){
+    section#home, section#about, section#services, section#portfolio, section#showcase, section#testimonials, section#plans, section#contact, section#news, section#quick_links, div.divider{
+        display: none;
+    }
+    section#NO{
+        display: inline;
+    }
+    body{
+        background: red;
+    }
+}
