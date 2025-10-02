@@ -6,7 +6,6 @@
 body{
     background: black;
 }
-/*NOTE: Lo hize de esta manera para que sea "responsive" (mas bien para que no se deforme el fondo y las cosas)*/
 /*----------------------------------MAIN WINDOW---------------------------------*/
 div#main_window{
     display: flex;
@@ -34,6 +33,11 @@ div#main_window div#main_container div#DK img{
     width: 15%;
     top: 13%;
     left: 9.5%;
+    
+    animation-name: jumps;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 }
 div#main_window div#main_container div#Barrel_1 img{
     position: absolute;
@@ -41,10 +45,91 @@ div#main_window div#main_container div#Barrel_1 img{
     top: 70%;
     left: 8.5%;
     transform: rotate(-20deg);
+    animation: barrelRotate 3s infinite ease-in-out alternate, barrelSpecific 6s infinite linear;
+    animation-composition: add;
 }
 div#main_window div#main_container div#Barrel_2 img{
     position: absolute;
     width: 10%;
     top: 75%;
     left: 82%;
+}
+div#main_window div#main_container div.Barrels img{
+    animation-name: barrelRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes barrelRotate{
+    from {
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes barrelSpecific{
+    0%, 72%, 100%{
+        transform: none;
+    }
+    72%{
+        transform: rotate(0deg);
+    }
+    99%{
+        transform: rotate(1800deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes jumps{
+    0%{
+        top: -50%;
+        left: 9.5%;
+    }
+    15%{
+        top: 13%;
+        left: 9.5%;
+    }
+    30%{
+        top: 35%;
+        left: 25%;
+    }
+    40%{
+        top: 46%;
+        left: 59%;
+    }
+    60%{
+        top: 35%;
+        left: 25%;
+    }
+    68%{
+        opacity: 1;
+    }
+    78%{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    80%{
+        top: 65%;
+        left: 7%;
+    }
+    83%{
+        opacity: 1;
+    }
+    90%{
+        top:-50%;
+        left: 7%;
+        transform: rotate(360deg);
+    }
+    100%{
+        top: -50%;
+        left: 7%;
+    }
 }
